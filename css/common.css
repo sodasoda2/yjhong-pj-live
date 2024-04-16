@@ -1,0 +1,37 @@
+/* Google Font CDN ( Noto Sans )*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Bagel+Fat+One&family=Diphylleia&family=Orbit&display=swap");
+/* Google Font CDN ( jua )*/
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+/* Fontawesome Icon CDN */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+/* 
+Ex) 
+font-family: "Jua", sans-serif;
+font-weight: 400;
+font-style: normal; 
+*/
+
+/* 폰트 전역 설정 */
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* CSS 공통 영역 */
+.inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.inbox {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.divider {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.vertical-divider {
+  border-left: 1px solid #000;
+  height: auto;
+}

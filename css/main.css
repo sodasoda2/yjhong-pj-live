@@ -1,0 +1,469 @@
+@charset "utf-8";
+
+/*********************************** 
+  * 공통모듈 CSS 
+***********************************/
+/* Rest CSS */
+@import url(./reset.css);
+
+/* Core CSS */
+@import url(./core.css);
+
+/* 12 Grid CSS */
+@import url(./grid_12_flex.css);
+
+/* Common CSS */
+@import url(./common.css);
+
+/*********************************** 
+  * 서브페이지 CSS 
+***********************************/
+@import url(./subpage.css);
+
+/* 공사중표시 */
+
+body * {
+  /* outline: 1px dashed plum; */
+}
+
+/******************* 1. 상단영역 *******************/
+
+/* 1.1 lnb 영역 */
+.lnb {
+  background-color: rgb(250, 250, 250);
+}
+
+.top-menu {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 35px;
+}
+
+.top-menu a {
+  font-size: 13px;
+  margin-left: 20px;
+  color: black;
+}
+
+/* 1.2 header-info 영역 */
+.header-info .logo img {
+  height: 45px;
+  vertical-align: middle;
+}
+
+.header-info .search .search-input {
+  width: 100%;
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-image: url("../images/search.png");
+  background-size: 25px;
+  background-position: 7px center;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  font-size: 15px;
+}
+
+.header-info .auth {
+  display: flex;
+  justify-content: end;
+}
+
+.header-info .auth span {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.header-info .auth span a:hover {
+  color: #4875ef;
+}
+
+.header-info .auth .hr {
+  padding: 0 7px;
+}
+
+/* 1.3 gnb 영역 */
+.gnb-menu {
+  display: flex !important;
+  align-items: center;
+}
+
+.gnb-menu ul {
+  display: flex;
+  white-space: nowrap;
+}
+
+/* gnb-menu 상위메뉴 마지막 li */
+.gnb-menu ul li:last-child {
+  margin-left: auto;
+}
+
+/* gnb-menu 상위메뉴요소 */
+.gnb-menu ul li a {
+  color: black;
+  font-size: 17px;
+}
+
+/* gnb-menu 상위메뉴요소 hover 시*/
+.gnb-menu > ul > li > a:hover {
+  color: #2d65f2;
+}
+
+/* gnb-menu 상위메뉴 요소의 a만 선택 (하위요소 a 미선택) */
+.gnb-menu > ul > li > a {
+  padding: 17px 70px;
+  font-size: 17.5px;
+}
+
+/* gnb-menu 상위메뉴 요소의 첫번째 a */
+.gnb-menu > ul > li > a:first-child {
+  padding-left: 0px;
+}
+
+/* gnb-menu 상위메뉴 요소의 마지막 a */
+.gnb-menu > ul > li > a:last-child {
+  padding-right: 0px;
+}
+
+/* gnb-menu 상위,하위 a요소 */
+.gnb-menu a {
+  display: block;
+}
+
+/* 상위메뉴만 적용하기 
+직계자식(>)선택으로 상위메뉴만 선택함 */
+.gnb-menu ul > li {
+  position: relative;
+}
+
+/* gnb-menu 하위메뉴 */
+.smenu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-80%);
+  width: 120px;
+  background-color: white;
+  line-height: 30px;
+  max-height: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* 상위li오버시 서브메뉴 보이기 */
+.gnb-menu ul > li:hover .smenu {
+  max-height: 210px;
+  box-shadow: 0 0 5px rgb(226, 226, 226);
+}
+
+/* 하위메뉴 리스트들 */
+.smenu ol {
+  text-align: center;
+}
+
+/* 하위메뉴 li 요소 */
+.smenu ol li {
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+/* 하위메뉴 a 요소 */
+.smenu ol li a {
+  padding: 6%;
+  font-size: 14.5px;
+  color: rgb(63, 63, 63);
+}
+
+/* 하위메뉴 오버시 */
+.gnb-menu ul > li:hover .smenu li {
+  opacity: 1;
+}
+
+/* 하위메뉴 li요소에 오버시 */
+.gnb-menu ul > li .smenu li:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+/* 하위메뉴 a요소에 오버시 */
+.gnb-menu ul > li .smenu li a:hover {
+  color: rgb(84, 84, 84);
+  font-weight: bold;
+}
+
+/* 스크롤을 내릴 때 fixed로 변하는 헤더 스타일 */
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; /* 원하는 배경색으로 변경 */
+  z-index: 1000; /* 다른 요소 위에 표시하기 위해 z-index 설정 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+}
+
+/* 스크롤시 상단 홈아이콘 출력 */
+.homeIcon {
+  font-size: 20px;
+  color: rgb(52, 52, 52);
+  margin-right: 60px;
+}
+
+/******************* 메인영역 *******************/
+
+/* 배너 이미지 */
+
+.bn-area {
+  margin-top: 4px;
+  background: #fdf6ff;
+}
+
+.banner {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.banner img.active {
+  opacity: 1;
+}
+
+.banner i {
+  color: #fff;
+  font-weight: bold;
+  font-size: 17px !important;
+}
+
+.banner .prev,
+.banner .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(8, 8, 8, 0.342); /* 투명도 추가 */
+  padding: 10px; /* 화살표 내부 여백 추가 */
+  height: 100%; /* 전체 높이에 맞게 설정 */
+  display: flex; /* 화살표를 수직 중앙 정렬하기 위해 flex 사용 */
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+.banner .prev {
+  left: 0;
+}
+
+.banner .next {
+  right: 0;
+}
+
+/* 공지사항 영역 */
+.notice {
+  background-color: white;
+}
+
+/* 공지사항 타이틀 */
+.notice .notice-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px 0;
+}
+
+.notice .notice-title h4 {
+  padding: 0 8px;
+}
+
+.notice .notice-title span {
+  font-size: 12px;
+  text-decoration: underline;
+  padding: 0 8px;
+}
+
+.notice .notice-content {
+  font-size: 14px;
+  padding: 8px 8px;
+}
+
+.notice .notice-content:nth-child(n):not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* 최신글, 인기글 영역 */
+.cont-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+
+.cont-title span {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.new-content .new-category,
+.pop-content .pop-category {
+  display: flex;
+  text-align: center;
+  text-overflow: ellipsis;
+  padding: 6px 0;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+}
+
+.new-content .new-category:nth-child(n):not(:last-child),
+.pop-content .pop-category:nth-child(n):not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.new-content .new-category span:nth-child(1),
+.pop-content .pop-category span:nth-child(1) {
+  flex: 2;
+}
+
+.new-content .new-category span:nth-child(2),
+.pop-content .pop-category span:nth-child(2) {
+  flex: 3;
+}
+
+.new-content .new-category span:nth-child(3),
+.pop-content .pop-category span:nth-child(3) {
+  flex: 7;
+}
+
+/* 상품 목록 */
+
+/* 최근 중고거래 상품 다중박스 */
+.products {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 최근 중고거래 상품 단일박스 */
+.product {
+  border: 1px solid #e7e7e7;
+}
+
+/* 최근 중고거래 상품 이미지 */
+.product img {
+  width: 100%;
+  max-width: 260px;
+  max-height: 200px;
+}
+
+/* 최근 중고거래 상품 텍스트 전체 */
+.product h3,
+.product p {
+  padding-left: 6px;
+}
+
+.product .pay {
+  padding: 5px 0 10px 6px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.product .location {
+  display: flex;
+  align-items: center;
+}
+
+.product .location i {
+  padding: 0 1px 0 8px;
+  font-size: 15px;
+}
+
+.product .location p {
+  padding: 5px 0 5px 6px;
+  font-size: 13px;
+}
+
+.mentos {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px !important;
+}
+
+.mento-title {
+  text-align: center;
+  line-height: 50px;
+  filter: brightness(120%);
+  background: linear-gradient(to bottom, #ca72d954, rgb(229 196 225 / 63%));
+}
+
+.mento-cont {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #efefef;
+}
+
+.mento-cont span {
+  font-size: 25px;
+}
+
+.mento-cont img:nth-child(1) {
+  max-height: 30px;
+  margin-right: 12px;
+}
+
+.mento-cont img:nth-child(3) {
+  max-height: 70px;
+  margin-left: auto;
+}
+
+.teacher table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.teacher th,
+.teacher td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.teacher td {
+  font-size: 15px;
+}
+
+.teacher td:nth-child(2) {
+  text-align: left;
+}
+
+/****************** 하단영역 *******************/
+.footer-area {
+  border-top: 1px solid #c7c7c7;
+  margin: 80px 0 40px 0;
+}
+
+.footer-info {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-copyright {
+  padding-top: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-social i {
+  padding: 30px 5px 0 0;
+  font-size: 32px;
+}
+
+/******* 테스트 코드 영역 ********/

@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset css */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ul,
+ol,
+p,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}

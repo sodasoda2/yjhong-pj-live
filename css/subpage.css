@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/***********************************************
+  * 구인정보 -> 전체정보 페이지
+***********************************************/
+
+/* 채용정보 페이지 전체 영역 */
+.job-main-area {
+  padding-top: 50px;
+}
+
+/* 채용 요약정보 상단 */
+.job-info-summary {
+  background: #fef7ff;
+  border-radius: 8px;
+  padding: 35px 70px 35px 70px;
+}
+
+.job-info-summary-tc dt {
+  line-height: 35px;
+}
+
+/* 채용 요약정보 상단 타이틀,건수 영역 */
+.job-info-summary-tc {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+/* 채용 요약정보 타이틀 */
+.job-info-summary-title {
+  font-size: 18px;
+}
+
+/* 채용 요약정보 건수 */
+.job-info-summary-count {
+  font-family: "Jua", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #b736be;
+}
+
+/* 채용 정보 메인 타이틀 */
+.job-main-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0 20px 0;
+}
+
+/* 채용 정보 메인 타이틀 옆 전체보기 */
+.job-main-title span {
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+/* 채용 정보 메인 리스트 타이틀 */
+.job-list-title {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0 15px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+/* 채용 정보 메인 리스트 타이틀 */
+.job-list-title span {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 채용 정보 메인 리스트 타이틀 위치 조정 */
+.job-list-title span:nth-child(1),
+.job-list-title span:nth-child(4),
+.job-list-title span:nth-child(5) {
+  flex: 1.5;
+}
+
+.job-list-title span:nth-child(2) {
+  flex: 4;
+}
+
+.job-list-title span:nth-child(3) {
+  flex: 2;
+}
+
+.job-info-location-tc {
+  display: flex;
+}

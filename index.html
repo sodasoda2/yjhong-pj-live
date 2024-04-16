@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 메인 CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- 메인JS 불러오기 : 모듈로 불러오기 -->
+    <script type="module" src="./js/main.js"></script>
+    <title>레슨모아</title>
+  </head>
+
+  <body>
+    <header>
+    <!-- 1. 상단 공통 영역 -->
+        <!-- 1-1. lnb 영역 -->
+        <div class="lnb"></div>
+
+        <!-- 구분선 -->
+        <div class="divider"></div>
+
+        <!-- 1-2. header-info 영역 -->
+        <div class="header-info pt-30 pb-30"></div>
+
+        <!-- 구분선 -->
+        <div class="divider"></div>
+
+        <!-- 1-3. gnb 영역 -->
+        <div class="gnb"></div>
+        
+        <!-- 구분선 -->
+        <div class="divider"></div>
+    </header>
+
+      <!-- 2. 메인영역 -->
+      <main class="main-area">
+        <div class="inner">
+          <div class="bn-area">
+            <div class="cont-box pt-50 pb-50">
+              <div class="col-8">
+                <!-- 배너 영역 -->
+                <div class="banner inbox">
+                  <img src="./images/banner_1.jpg" class="banner-image active" alt="배너1" />
+                  <img src="./images/banner_2.png" class="banner-image" alt="배너2" />
+                  <img src="./images/banner_3.png" class="banner-image" alt="배너3" />
+                  <img src="./images/banner_4.png" class="banner-image" alt="배너4" />
+                  <i class="prev fa-solid fa-chevron-left"></i>
+                  <i class="next fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="col-4">
+                <!-- 공지사항 영역 -->
+                <div class="notice inbox">
+                  <div class="notice-title">
+                    <h4>공지사항</h4>
+                    <span> 더보기 </span>
+                  </div>
+                  <div class="notice-content">
+                    <span> 12회 콩쿨대회 개최 </span>
+                  </div>
+                  <div class="notice-content">
+                    <span> 레슨모아 사이트 운영 공지 </span>
+                  </div>
+                  <div class="notice-content">
+                    <span> 3월 이벤트 당첨자 </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 최신글, 인기글 영역 -->
+          <div class="cont-box pt-50">
+            <div class="col-6">
+              <div class="cont-title">
+                <h3>최신글</h3>
+                <span> 전체보기 </span>
+              </div>
+              <div class="new-content inbox">
+                <div class="new-category">
+                  <span>카테고리</span>
+                  <span>지역</span>
+                  <span>제목</span>
+                </div>
+                <div class="new-category">
+                  <span>피아노</span>
+                  <span>서울</span>
+                  <span>영유아 음악선생님 구합니다.</span>
+                </div>
+                <div class="new-category">
+                  <span>체육</span>
+                  <span>경기</span>
+                  <span>피아노, 작곡, 레슨(7:3) + 관리(협의), 분당·야탑.</span>
+                </div>
+                <div class="new-category">
+                  <span>미술</span>
+                  <span>서울</span>
+                  <span>강동구 음악학원 전임선생님 모십니다.</span>
+                </div>
+                <div class="new-category">
+                  <span>미술</span>
+                  <span>경기 남양주시</span>
+                  <span>다산신도시 지금지구 음악학원 파트 2일 쌤 구인</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="cont-title">
+                <h3>인기글</h3>
+                <span> 전체보기 </span>
+              </div>
+              <div class="pop-content inbox">
+                <div class="pop-category">
+                  <span>카테고리</span>
+                  <span>지역</span>
+                  <span>제목</span>
+                </div>
+                <div class="pop-category">
+                  <span>피아노</span>
+                  <span>서울</span>
+                  <span>영유아 음악선생님 구합니다.</span>
+                </div>
+                <div class="pop-category">
+                  <span>체육</span>
+                  <span>경기</span>
+                  <span>피아노, 작곡, 레슨(7:3) + 관리(협의), 분당·야탑.</span>
+                </div>
+                <div class="pop-category">
+                  <span>미술</span>
+                  <span>서울</span>
+                  <span>강동구 음악학원 전임선생님 모십니다.</span>
+                </div>
+                <div class="pop-category">
+                  <span>미술</span>
+                  <span>경기 남양주시</span>
+                  <span>다산신도시 지금지구 음악학원 파트 2일 쌤 구인</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 최근 중고거래 영역 -->
+          <div class="cont-box pt-50">
+            <div class="col-12">
+              <div class="cont-title">
+                <h3>최근 중고거래</h3>
+                <span> 전체보기 </span>
+              </div>
+              <ul class="products">
+                <li class="product">
+                  <a href="#">
+                    <img src="./images/lesson_1.jpg" alt="피아노 이미지" />
+                  </a>
+                  <h3>그랜드 피아노 팝니다.</h3>
+                  <p class="pay">900,000 원</p>
+                  <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>서울, 마포구</p>
+                  </div>
+                </li>
+                <li class="product">
+                  <a href="#">
+                    <img src="./images/lesson_2.jpg" alt="피아노 이미지" />
+                  </a>
+                  <h3>그랜드 피아노 팝니다.</h3>
+                  <p class="pay">900,000 원</p>
+                  <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>경기도, 남양주시</p>
+                  </div>
+                </li>
+                <li class="product">
+                  <a href="#">
+                    <img src="./images/lesson_3.jpg" alt="피아노 이미지" />
+                  </a>
+                  <h3>그랜드 피아노 팝니다.</h3>
+                  <p class="pay">900,000 원</p>
+                  <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>서울, 성북구</p>
+                  </div>
+                </li>
+                <li class="product">
+                  <a href="#">
+                    <img src="./images/lesson_4.jpg" alt="피아노 이미지" />
+                  </a>
+                  <h3>그랜드 피아노 팝니다.</h3>
+                  <p class="pay">900,000 원</p>
+                  <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>서울, 강동구</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 레슨멘토 순위 영역 -->
+          <div class="cont-box pt-50">
+            <div class="col-12">
+              <div class="cont-title">
+                <h3>레슨멘토 순위</h3>
+                <span> 전체보기 </span>
+              </div>
+              <div class="mentos">
+                <div class="col-4 inbox">
+                  <div class="mento-title">
+                    <h4>피아노 인기멘토 순위</h4>
+                  </div>
+                  <div class="mento-cont">
+                    <img src="./images/medal-gold.png" alt="금메달" />
+                    <span> 아이유 </span>
+                    <img src="./images/mento_1.jpg" alt="얼굴사진" />
+                  </div>
+                  <div class="mento-cont">
+                    <img src="./images/medal-silver.png" alt="금메달" />
+                    <span> 공유 </span>
+                    <img src="./images/mento_4.jpg" alt="얼굴사진" />
+                  </div>
+                  <div class="mento-cont">
+                    <img src="./images/medal-bronze.png" alt="동메달" />
+                    <span> 허각 </span>
+                    <img src="./images/mento_3.jpg" alt="얼굴사진" />
+                  </div>
+                </div>
+                <div class="col-4 inbox">
+                  <div class="mento-title">
+                    <h4>미술 인기멘토 순위</h4>
+                  </div>
+                  <div class="mento-cont">
+                    <img src="./images/medal-gold.png" alt="금메달" />
+                    <span> 아이유 </span>
+                    <img src="./images/mento_1.jpg" alt="얼굴사진" />
+                  </div>
+                  <div class="mento-cont">
+                    <img src="./images/medal-silver.png" alt="금메달" />
+                    <span> 공유 </span>
+                    <img src="./images/mento_4.jpg" alt="얼굴사진" />
+                  </div>
+                  <div class="mento-cont">
+                    <img src="./images/medal-bronze.png" alt="동메달" />
+                    <span> 허각 </span>
+                    <img src="./images/mento_3.jpg" alt="얼굴사진" />
+                  </div>
+                </div>
+                <div class="col-4 inbox">
+                  <div class="mento-title">
+                    <h4>예체능 인기멘토 순위</h4>
+                  </div>
+                  <div class="mento-cont">
+                    <img src="./images/medal-gold.png" alt="금메달" />
+                    <span> 아이유 </span>
+                    <img src="./images/mento_1.jpg" alt="얼굴사진" />
+                  </div>
+                  <div class="mento-cont">
+                    <img src="./images/medal-silver.png" alt="금메달" />
+                    <span> 공유 </span>
+                    <img src="./images/mento_4.jpg" alt="얼굴사진" />
+                  </div>
+                  <div class="mento-cont">
+                    <img src="./images/medal-bronze.png" alt="동메달" />
+                    <span> 허각 </span>
+                    <img src="./images/mento_3.jpg" alt="얼굴사진" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 선생님 찾기 영역 -->
+          <div class="cont-box pt-50">
+            <div class="col-12">
+              <div class="cont-title">
+                <h3>선생님 찾기</h3>
+                <span> 전체보기 </span>
+              </div>
+              <div class="teacher">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>이름</th>
+                      <th>제목</th>
+                      <th>전공</th>
+                      <th>희망지역</th>
+                      <th>조회수</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>홍길동</td>
+                      <td>아이들을 사랑하는마음으로 열심을 다해 성심껏 가르치겠습니다.</td>
+                      <td>피아노, 반주</td>
+                      <td>서울 종로구</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동</td>
+                      <td>아이들을 사랑하는마음으로 열심을 다해 성심껏 가르치겠습니다.</td>
+                      <td>피아노, 반주</td>
+                      <td>서울 종로구</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동</td>
+                      <td>아이들을 사랑하는마음으로 열심을 다해 성심껏 가르치겠습니다.</td>
+                      <td>피아노, 반주</td>
+                      <td>서울 종로구</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동</td>
+                      <td>아이들을 사랑하는마음으로 열심을 다해 성심껏 가르치겠습니다.</td>
+                      <td>피아노, 반주</td>
+                      <td>서울 종로구</td>
+                      <td>3</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- 3. 하단영역 -->
+      <footer class="footer-area">
+        <div class="inner">
+          <div class="footer-info">
+            <p>
+              레슨모아 고객센터 : xx-xxxx-xxxx (평일 09:00 - 18:00, 점심시간 12:00 - 13:00,
+              주말·공휴일 휴무)
+              <br />
+              이메일 : xx@naver.com / Fax : xx-xxxx-xxxx
+              <br /><br />
+              (주) 레슨모아, 우 : 08378, 서울특별시 구로구 디지털로34길 43 , 대표: xxx
+              <br />
+              사업자등록 : xxx-xx-xxxxx / 직업정보제공사업 : 서울 관악 제 xxxx-x호 / 통신판매업 : 제
+              xxxx-xxxxx호
+              <br />
+            </p>
+          </div>
+          <div class="footer-copyright">Copyright &copy; (주)레슨모아. All rights reserved.</div>
+          <div class="footer-social">
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-apple"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
